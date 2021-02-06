@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Multiple_1">
+		<classes>
+			<class name="Multiple.Multiple_Demo">
+				<methods>
+					<include name="Test_1" />
+					<include name="Test_2" />
+					<exclude name="Test_A" />
+					<exclude name="Test_B" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Multiple -->
+	<test name="Multiple_2">
+		<classes>
+			<class name="Multiple.Multiple_Demo">
+				<methods>
+					<include name="Test_A" />
+					<exclude name="Test_B" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Multiple -->
+	<test name="Multiple_3">
+		<classes>
+			<class name="Multiple.Multiple_Demo">
+				<methods>
+					<include name="Test_B" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Multiple -->
+</suite> <!-- Suite -->
